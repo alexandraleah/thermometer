@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Give</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>    </head>
+    <body>
+        <h1 class="text-center">CSS Fundraising Thermometer</h1>
+        <div id="custom" class="container">
+            <h3 class="text-center">Customize your thermometer</h3>
+            <label for="myGoal">Goal:</label><br>
+            <input type="text" class="form-control" id="myGoal"></input><br>
+            <label for="myCurrent">Current level:</label><br>
+            <input type="text"  class="form-control" id="myCurrent"></input><br>
+            <button type="button" class="btn btn-secondary" id="go">Go</button>
+         </div>
+         <div id="myMeter">
+             <h3 class="text-center">Help us reach our goal</h3>
+              <div id='thermometer'>
+                  <span id='goal'>$</span>
+                  <span id='current'>$</span>
+                  <span id='zero'>$0</span>
+                  <div id='meter'>
+                      <div id='raised'></div>
+                  </div>
+                  <div id='bulb'></div>
+          </div>
+          </div>
+         
+    </body>
+</html>
