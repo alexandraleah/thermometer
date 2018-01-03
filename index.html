@@ -35,6 +35,27 @@
                   <div id='bulb'></div>
           </div>
           </div>
-         
+<script>
+    
+$(function() {
+ $("#myMeter").hide();
+  $("#go").on("click", function() {
+      var goal = $("#myGoal").val();
+      var current = $("#myCurrent").val();
+      var color = $("#myColor").val();
+      $("#goal").append(goal);
+      $("#current").append(current);
+      var place = (current/goal)*100;
+      var place = place + "%";
+      $("#current").css("bottom", place);
+      $("#raised").animate({height: place}, 3000);
+      $("#custom").hide();
+      $("#myMeter").show();
+      });
+ 
+});
+
+
+</script>
     </body>
 </html>
