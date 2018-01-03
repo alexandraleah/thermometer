@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+   
+    
+}
+
+h1 {
+ text-transform: uppercase;
+ margin:30px
+}
+
+h3 {
+   margin:30px;
+   
+}
+span{
+   position:absolute ;
+   float:right;
+   left: 75px ;
+   text-align:right;
+   font-weight:bold;
+}
+
+#zero {
+   top:100%;
+}
+#current { 
+   bottom:70%;
+}
+#thermometer{
+   width:50px; 
+   height:300px;  
+  position:relative ;
+   margin:auto;
+   }
+#meter {
+   width:50px;
+   height:300px;
+   border-radius:0px 0px 12px 12px;
+  position:relative ;
+   margin:auto;
+   z-index:1;
+    box-shadow:-10px -3px 10px -3px #888;
+    background:linear-gradient(90deg, #eeeeee, #ffffff, #eeeeee);
+    transform:rotate(180deg);
+  }
+#raised {
+   background-color:#b20000; 
+background:linear-gradient(90deg, #b20000, #ff0000, #b20000);
+   position:relative ;
+   animation-name: rise;  
+   animation-duration: 5s;
+}
+
+
+#bulb {
+   width:75px; 
+   height:75px;
+   background-color:#b20000;
+  background:radial-gradient(#ff0000, #b20000);
+   border-radius:50%;
+   position:relative ;
+   top:-10px;
+   left:-25%;
+   margin:auto;
+   box-shadow: 10px -3px 20px -3px #888;
+}
+
+#bulb:after{
+    content: '';
+    position: absolute;
+    border-radius:100%;
+    top:10px;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient( 90deg, #b20000, #ff0000, #b20000);
+}
